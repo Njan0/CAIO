@@ -2,9 +2,9 @@
 #include <random>
 
 int main() {
-    int width = 1024;
-    int height = 1024;
-    int iterations = 1000;
+    int width = 512;
+    int height = 512;
+    int iterations = 500;
 
     // randomly generate each space while leaving a circular spot empty
     auto rnd = std::mt19937(std::random_device()());
