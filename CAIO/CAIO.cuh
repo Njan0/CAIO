@@ -14,6 +14,11 @@ public:
         Left = 1 << 3
     };
 
+    /// <summary>
+    /// Number of outgoing signals of each state
+    /// </summary>
+    static const std::array<unsigned char, 16> stateCount;
+
 private:
     const int width;
     const int height;

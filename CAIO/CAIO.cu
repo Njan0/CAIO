@@ -19,12 +19,12 @@ std::array<unsigned char, 16> generateStateCount() {
 
     return result;
 }
-const std::array<unsigned char, 16> stateCount = generateStateCount();
+const std::array<unsigned char, 16> CAIO::stateCount = generateStateCount();
 
 std::array<unsigned char, 16> generateStateColor() {
     std::array<unsigned char, 16> result;
     for (int i = 0; i < 16; ++i) {
-        result[i] = stateCount[i] == 4 ? 255 : stateCount[i] * 64;
+        result[i] = CAIO::stateCount[i] == 4 ? 255 : CAIO::stateCount[i] * 64;
     }
 
     return result;
